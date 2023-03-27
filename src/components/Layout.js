@@ -1,7 +1,11 @@
+import { BottomBar } from './BottomBar';
+import TopBar from './TopBar';
+
 const Layout = ({ children }) => {
   return (
     <div>
-      <p>Nav</p>
+      <TopBar />
+      <BottomBar />
       <div>{children}</div>
     </div>
   );
