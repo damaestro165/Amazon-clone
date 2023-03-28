@@ -1,7 +1,6 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Image from 'next/image';
 import '@splidejs/react-splide/css';
-import '@splidejs/react-splide/css/core';
 
 export const MainSlider = () => {
   return (
@@ -9,9 +8,11 @@ export const MainSlider = () => {
       aria-label='Slider Images'
       options={{
         rewind: true,
-        width: 1200,
+        height: 350,
         pagination: false,
         arrows: true,
+        perPage: 1,
+        width: 1200,
       }}
     >
       <SplideSlide>

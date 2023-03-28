@@ -1,7 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
+
 import { Inter } from 'next/font/google';
 import { MainSlider } from '@/components/MainSlider';
+import { GroupProducts } from '@/components/GroupProducts';
+import { Center } from '@chakra-ui/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,9 +16,13 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/amazonicon.png' />
       </Head>
-      <main>
-        <div className='flex justify-center'>
+      <main className=' bg-[#e3e6e6] relative md:h-[50rem] '>
+        <div className='flex justify-center items-center '>
           <MainSlider />
+        </div>
+
+        <div className=' -mt-[7rem] z-50 absolute flex items-center justify-center w-full'>
+          <GroupProducts />
         </div>
       </main>
     </>
