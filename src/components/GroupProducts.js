@@ -6,7 +6,7 @@ export const GroupProducts = () => {
       <ProductCard
         title='Jewelery'
         image='/images/jewelery.jpg'
-        query='jewelry'
+        query='jewelery'
       />
       <ProductCard
         title='Electronics'

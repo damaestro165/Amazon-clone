@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 
 const Product = ({ data }) => {
-  console.log(data);
   return (
     <div className='flex mt-5'>
       <div className='w-1/6'></div>

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import { MainSlider } from '@/components/MainSlider';
 import { GroupProducts } from '@/components/GroupProducts';
-import { Center } from '@chakra-ui/react';
+import AllProduct from '@/components/AllProduct';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,8 +20,9 @@ export default function Home() {
         <div className='flex justify-center items-center '>
           <MainSlider />
         </div>
-        <div className=' -mt-[7rem] z-50 absolute flex items-center justify-center w-full'>
+        <div className=' -mt-[7rem] z-50 absolute flex items-center justify-center w-full flex-col'>
           <GroupProducts />
+          <AllProduct />
         </div>
       </main>
     </>
