@@ -1,5 +1,6 @@
 import React from 'react';
-import { client } from '../../../client';
+import { client, urlFor } from '../../../client';
+import Image from 'next/image';
 
 const categories = ({ data }) => {
   console.log(data);
@@ -9,7 +10,16 @@ const categories = ({ data }) => {
         <div key={category.name}>
           <div>{category.name}</div>
           {category.products?.map((product) => (
-            <div key={product?.name}>{product?.name}</div>
+            <div key={product?.name}>
+              <div>{product?.name}</div>
+              <Image
+                className=' w-46 h-52'
+                src={urlFor(product.image[0]).url()}
+                alt={product.name}
+                width={200}
+                height={74}
+              />
+            </div>
           ))}
         </div>
       ))}
