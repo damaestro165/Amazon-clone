@@ -5,7 +5,7 @@ import { FaStar } from 'react-icons/fa';
 const Product = ({ data }) => {
   return (
     <div className='flex mt-5'>
-      <div className='w-1/6'></div>
+      <div className='w-1/6'> side bar</div>
       <div className='grid grid-cols-4 w-5/6 gap-5'>
         {data.map((product) => (
           <div key={product.id}>
